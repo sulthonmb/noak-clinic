@@ -122,5 +122,8 @@ const patients = [
 
 const clinic = new Clinic(1, "My Clinic", doctors, patients);
 
-console.log('Estimate for patient with ID 15:', clinic.estimateWaitingTime(15));
+for (let i=1; i<=15; i++) {
+    console.log(`Estimate for patient with ID ${i}: ${clinic.estimateWaitingTime(i)}`);
+}
+
 
